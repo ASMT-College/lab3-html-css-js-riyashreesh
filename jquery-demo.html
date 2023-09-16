@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myDiv").hide();
+        $("#myDiv").click(function () {
+          alert("Hi this event defined from jquery");
+        });
+        $("#myDiv").on("mouseenter", function () {
+          $("body").css("background-color", "blue");
+        });
+
+        $("#myDiv").on("mouseleave", function () {
+          $("body").css("background-color", "green");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="myDiv">Hello my div</div>
+    <div onclick="$('#myDiv').show()">Show</div>
+    <div onclick="hideMyDiv()">Hide</div>
+    <script>
+      function hideMyDiv() {
+        $("#myDiv").hide();
+      }
+
+      // give example of xml and json for list of employees having
+    </script>
+  </body>
+</html>
